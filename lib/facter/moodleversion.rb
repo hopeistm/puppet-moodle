@@ -15,7 +15,7 @@ end
 
 moodle_dir = nil
 
-results = Facter::Core::Execution.exec("#{apachecmd} -S")
+results = Facter::Util::Resolution.exec("#{apachecmd} -S")
 if results == nil
   exit
 end
